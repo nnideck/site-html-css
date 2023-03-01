@@ -1,0 +1,22 @@
+body {
+font-family:'Cabin', sans-serif;
+width: 1386px;
+height: 6052px;
+margin: 0px;
+}
+
+.header-1 {
+    width: 100%;
+    height:15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div-2 {
+width: 100%;
+height: fit-content;
+background: url(./images/home-bg.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+}

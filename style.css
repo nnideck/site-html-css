@@ -1,36 +1,38 @@
 :root {
-    --bluebutton: rgb(85, 122, 255)
-    --blackfonts: rgba(32, 31, 31, 0.966)
+    --bluebutton: #5E87EB;
+    --blackfonts: rgba(32, 31, 31, 0.966);
 }
 
 
 body {
 font-family:'Cabin', sans-serif;
-width: 1386px;
-height: 6052px;
-margin-top: 0px;
-
+margin: 0;
+display: block;
+width: 100%;
 }
 
 .div-1 {
-    padding-left: 50px;
-    padding-right: 50px;
+/*     padding-left: 150px;
+    padding-right: 150px; pq o padding não funciona aqui?*/
+    width: 100%;
+    max-width: 1386px;
+    min-width: 1000px;
+    margin: 0px auto; /*coloco auto para que ele sempre centralize na tela  */ 
 }
 
 .header-1 {
     width: 100%;
     height:15px;
-    padding-top: 20px;
+    padding-top: 35px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-
 .title-1 {
-    font-size: 25px;
- 
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .nav-1 {
@@ -40,38 +42,52 @@ margin-top: 0px;
     justify-content: space-around;
 }
 
-.an-1 {
-    font-size: 15px;
+.nav-1 a {
+    font-size: 16px;
     color: rgba(32, 31, 31, 0.966);
     text-decoration: none;
 }
 
+.div-2-buttons{
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-3-buttons{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .button-white {
     background-color: rgb(255, 255, 255);
-    color: rgb(85, 122, 255);
+    color: var(--bluebutton);
     border-radius: 50px;
-    font-size: 12px;
-    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+    padding: 12px 22px 12px 22px;
     border: 0px;
     box-shadow: 0px 0px 5px 5px rgb(234, 235, 238);
 }
 
 .button-blue {
-    background-color: rgb(85, 122, 255);
+    background-color:var(--bluebutton);
     color: white;
     border-radius: 50px;
-    font-size: 12px;
-    padding: 10px 20px 10px 20px;
-    border: 0px;
-    margin-left: 20px;
+    font-size: 14px;
+    padding: 12px 22px 12px 22px;
+    border: none;
 }
 
 .div-2 {
-padding-left: 100px;
-padding-right: 100px;
+padding-left: 120px;
+padding-right: 120px;
 background: url(./images/home-bg.jpg);
 background-repeat: no-repeat;
-background-size: 100%
+background-size: 100%;
+height: 650px;
 }
 
 .div-3 {
@@ -80,15 +96,26 @@ background-size: 100%
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+}
+
+.div-3 h1{
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 45px;
+}
+.div-3 p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 16px;
 }
 
 .div-4 {
-width: 450px;
+width: 500px;
 }
 
 .span-1 {
-    color: rgba(85, 122, 255, 0.842);
+    color: var(--bluebutton);
 }
 
 .img-bsc {
@@ -101,6 +128,43 @@ p {
 }
 
 .div-it {
-    
-    
+    background-color: #F1F5F8;
+    padding-left: 120px;
+    padding-right: 120px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-it div{
+    background-color:  #fff;
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 0px 0px 5px 5px rgb(234, 235, 238);
+    padding: 35px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 30px;
+    color: var(--blackfonts);
+}
+
+.div-it h3{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.figure-it {
+background-color: #F1F5F8 ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
 }

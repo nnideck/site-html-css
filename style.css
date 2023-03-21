@@ -4,6 +4,8 @@
     --bluebuttonhover: #2e54b4;
     --srtgradient: #5E7DEA;
     --endgradient:#6125DE;
+    --backgroundgray1: #F1F5F8;
+    --backgroundgray2: #E1E4EB;
 }
 
 
@@ -66,6 +68,7 @@ width: 100%;
 .button-white {
     background-color: rgb(255, 255, 255);
     color: var(--bluebutton);
+    font-weight: bold;
     border-radius: 50px;
     font-size: 14px;
     padding: 12px 22px 12px 22px;
@@ -77,6 +80,7 @@ width: 100%;
 .button-blue {
     background-color:var(--bluebutton);
     color: white;
+    font-weight: bold;
     border-radius: 50px;
     font-size: 14px;
     padding: 12px 22px 12px 22px;
@@ -141,7 +145,7 @@ p {
 }
 
 .div-it {
-    background-color: #F1F5F8;
+    background-color: var(--backgroundgray1);
     padding-left: 120px;
     padding-right: 120px;
     height: 500px;
@@ -174,7 +178,7 @@ p {
 }
 
 .figure-it {
-    background: #F1F5F8 url(./images/icon-1.png);
+    background: var(--backgroundgray1) url(./images/icon-1.png);
         background-position: center;
         background-repeat: no-repeat;
         width: 50px;
@@ -184,7 +188,7 @@ p {
 }
 
 .figure-web {
-    background:#F1F5F8 url(./images/icon-2.png);
+    background:var(--backgroundgray1) url(./images/icon-2.png);
     background-position: center;
     background-repeat: no-repeat;
     width: 50px;
@@ -194,7 +198,7 @@ p {
 }
 
 .figure-net {
-    background: #F1F5F8 url(./images/icon-3.png);
+    background: var(--backgroundgray1) url(./images/icon-3.png);
     background-position: center;
     background-repeat: no-repeat;
     width: 50px;
@@ -213,7 +217,7 @@ p {
 }
 
 .div-5 {
-    background-color: #E1E4EB;
+    background-color: var(--backgroundgray2);
     padding-left: 120px;
     padding-right: 120px;
     height: 600px;
@@ -242,7 +246,7 @@ font-size: 16px;
 font-family: 'Cabin', sans-serif;
 }
 
-.btn-1 {
+.div-5 button:hover{
     background-image: linear-gradient(to right, var(--srtgradient),var(--endgradient));
     color: white;
 }
@@ -261,7 +265,7 @@ font-family: 'Cabin', sans-serif;
 }
 
 .div-5-2 {
-    background-color:#F1F5F8 ;
+    background-color:var(--backgroundgray1) ;
 }
 
 .div-6 {
@@ -285,7 +289,7 @@ font-family: 'Cabin', sans-serif;
 .div-7 {
     height: 650px;
     padding: 40px 0px 40px 0px;
-    background-color: #E1E4EB;
+    background-color: var(--backgroundgray1);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -325,6 +329,8 @@ font-family: 'Cabin', sans-serif;
     height: auto;
     border-radius: 4px;
 } 
+
+
 .lewis {
     width: 250px;
     height: auto;
@@ -342,29 +348,234 @@ font-family: 'Cabin', sans-serif;
 }
 
 .div-8 {
-    background-color: #F1F5F8;
-    padding-left: 120px;
-    padding-right: 120px;
-    height: 500px;
+    background-color: var(--backgroundgray2);
+    padding: 40px 120px 40px 120px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+/*     align-items: center; */
+    justify-content: space-evenly;
+}
+
+.conjunt-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .card-8 {
     background-color: #fff;
     width: 280px;
-    height: 280px;
-    border-radius: 10px;
+    height: 320px;
+    border-radius: 5px;
     border: 0px;
-    box-shadow: 0px 0px 5px 5px rgb(234, 235, 238);
     padding: 35px;
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     line-height: 30px;
     color: var(--blackfonts);
+    text-align: center;
+}
+
+.card-8-star {
+    width: 90px;
+    height: 15px;
+}
+
+.image-card-8-1 {
+    background-image: url(./images/member-1.JPG);
+    background-position: center;
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+}
+
+.image-card-8-2 {
+    background-image: url(./images/member-2.JPG);
+    background-position: center;
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+}
+
+.image-card-8-3 {
+    background-image: url(./images/member-3.JPG);
+    background-position: center;
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+}
+
+.div-8 h1 {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: var(--blackfonts);
+}
+
+.card-8 h3 {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: var(--blackfonts);
+}
+
+.card-8 span {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: var(--blackfonts);
+}
+.card-8 p{
+    margin: 0px;
+    font-style: italic;
+}
+
+.div-9 {
+    background: url(./images/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+       height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 35px 0px 35px 0px;
+}
+
+.div-9 h1{
+        font-weight: bold;
+            font-size: 32px;
+            text-align: center;
+            color: #fff;
+}
+
+.div-9 p {
+    max-width: 600px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    margin: 0px;
+}
+
+.div-9 button{
+            background-color: rgb(255, 255, 255);
+            color: var(--bluebutton);
+            border-radius: 50px;
+            font-size: 14px;
+            padding: 12px 22px 12px 22px;
+            border: 0px;
+            cursor: pointer;
+            font-weight: bold;
+}
+
+.div-10 {
+    background-color: var(--backgroundgray1);
+    padding: 30px 120px 30px 120px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+ /*    align-items: center; */
+    justify-content: space-evenly;
+}
+
+.div-10 h1 {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    color: var(--blackfonts);
+}
+
+.div-10 h3 {
+        font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            color: var(--blackfonts);
+            margin-bottom: 10px;
+}
+
+.card-10-1 {
+    background-image: url(./images/artic-1.PNG);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    width: 280px;
+        height: 450px;
+        border-radius: 5px;
+        border: 0px;
+        padding: 35px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items: center;
+        line-height: 30px;
+        color: var(--blackfonts);
+        text-align: center;
+}
+
+.card-10-2 {
+    background-image: url(./images/artic-2.PNG);
+    background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        width: 280px;
+        height: 450px;
+        border-radius: 5px;
+        border: 0px;
+        padding: 35px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        line-height: 30px;
+        color: var(--blackfonts);
+        text-align: center;
+}
+
+.card-10-3 {
+    background-image: url(./images/artic-3.PNG);
+    background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        width: 280px;
+        height: 450px;
+        border-radius: 5px;
+        border: 0px;
+        padding: 35px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        line-height: 30px;
+        color: var(--blackfonts);
+        text-align: center;
+}
+
+.div-11 {
+    height: 250px;
+    background-color: var(--backgroundgray2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 120px 0px 120px;
+
+}
+
+.clients {
+width: 200px;
+/* flex-basis: 0; */
 }

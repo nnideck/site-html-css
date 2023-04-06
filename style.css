@@ -342,7 +342,7 @@ p {
 
 .lewis {
   width: 250px;
-  height: auto;
+  height: 281px;
   border-radius: 4px;
 }
 .arturo {
@@ -354,6 +354,67 @@ p {
   width: 250px;
   height: auto;
   border-radius: 4px;
+}
+
+.hover-expert {
+    width: 250px;
+    height: 281px;
+    margin-top: -291px;
+    border-radius: 4px;
+    background-color: var(--bluebuttonhover);
+    filter: opacity(70%);
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+}
+
+.hover-expert button{
+  width: 25px;
+  height: 25px;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.expert-fb {
+  background: #fff url(./images/icon-4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.expert-tw {
+  background: #fff url(./images/icon-5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.expert-lin {
+  background: #fff url(./images/icon-6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.lewis:hover .hover-expert {
+  visibility: visible;
+  transition: 0,3s;
+} 
+
+.arturo:hover + .hover-expert {
+  visibility: visible;
+}
+
+.velma:hover+.hover-expert {
+  visibility: visible;
+}
+
+.marc:hover+.hover-expert {
+  visibility: visible;
 }
 
 .div-8 {
@@ -604,6 +665,7 @@ padding-top: 50px;
   font-weight: bold;
   border-bottom: 1px solid #fff;
  margin: 20px 0px;
+ font-size: 18px;
 }
 
 .div-12-1 {
@@ -676,7 +738,7 @@ margin-top: 10px;
  height: 40px;
  border: 0px;
 margin: 0px;
-padding: 0px 30px;
+padding: 0px 20px;
 border-bottom-left-radius: 5px;
 border-top-left-radius: 5px;
 }
@@ -691,5 +753,29 @@ border-top-left-radius: 5px;
     cursor: pointer;
     background: var(--bluebutton);
     color: #fff;
-
   }
+
+.div-13 {
+  height: 100px;
+  background-color:#0E1326;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 120px;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.div-13 a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.div-13 div {
+  width: 250px;
+ display: flex;
+justify-content: space-around;
+flex-direction: row;
+}

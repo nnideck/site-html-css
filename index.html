@@ -14,6 +14,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link href="./icons/css/fontawesome.css" rel="stylesheet" />
+    <link href="./icons/css/brands.css" rel="stylesheet" />
+    <link href="./icons/css/solid.css" rel="stylesheet" />
   </head>
   <body>
     <div class="div-1">
@@ -23,9 +26,45 @@
           <nav class="nav-1">
             <a href="#">Home</a>
             <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Pages</a>
-            <a href="#">Blog</a>
+            <div class="dropdown">
+              <input type="checkbox" id="checkbox" class="checkbox" />
+              <label for="checkbox"
+                >Services<i class="fa fa-angle-down"></i
+              ></label>
+              <div class="mega-menu">
+                <ul class="container">
+                  <li class="item">
+                    <a href="#">E-Commerce Development</a>
+                  </li>
+                  <!-- /.item -->
+                  <li class="item">
+                    <a href="#">WebDesign</a>
+                  </li>
+                  <!-- /.item -->
+                  <li class="item">
+                    <a href="#">WordPress Development</a>
+                  </li>
+                  <!-- /.item -->
+                  <li class="item">
+                    <a href="#">Network Monitoring</a>
+                  </li>
+                  <!-- /.item -->
+                  <li class="item">
+                    <a href="#">Page Speed Optimization</a>
+                  </li>
+                  <!-- /.item -->
+                  <li class="item">
+                    <a href="#">Shopify Development</a>
+                  </li>
+                  <!-- /.item -->
+                </ul>
+                <!-- /.container -->
+              </div>
+              <!-- /.megamenu -->
+            </div>
+            <!--./dropdown-->
+
+            <a href="#">Blog <i class="fa fa-angle-down"></i></a>
             <a href="#">Contact</a>
           </nav>
           <div class="div-2-buttons">
@@ -156,13 +195,12 @@
               title="lewis-lucas"
               src="./images/member-1.JPG"
             >
-              <div class="hover-expert">
-                <button class="expert-fb" title="Facebook"></button>
-                <button class="expert-tw" title="Twitter"></button>
-                <button class="expert-lin" title="LinkedIn"></button>
-              </div>
             </image>
-
+            <div class="hover-expert">
+              <button class="expert-fb" title="Facebook"></button>
+              <button class="expert-tw" title="Twitter"></button>
+              <button class="expert-lin" title="LinkedIn"></button>
+            </div>
             <figcaption>
               <h3>Lewis Lucas</h3>
               <span>IT Manager</span>

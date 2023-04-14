@@ -1,7 +1,7 @@
 :root {
   --bluebutton: #5e87eb;
   --blackfonts: rgba(63, 63, 63, 0.966);
-  --bluebuttonhover: #2e54b4;
+  --bluebuttonhover: rgb(46, 84, 180);
   --srtgradient: #5e7dea;
   --endgradient: #6125de;
   --backgroundgray1: #f1f5f8;
@@ -15,8 +15,6 @@ body {
   width: 100%;
   text-decoration: none;
 }
-
-
 
 .div-1 {
   width: 100%;
@@ -58,6 +56,57 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.mega-menu {
+  background: #eee;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  position: absolute;
+  /* left: 0; */
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+
+.mega-menu .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-menu .item {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.mega-menu a {
+  border-bottom: 1px solid #ddd;
+  color: #4ea3d8;
+  display: block;
+  padding: 10px 0;
+}
+
+.mega-menu a:hover {
+  color: #2d6a91;
+}
+
+.dropdown {
+  position: static;
+}
+
+/* .dropdown:hover .mega-menu {
+  visibility: visible;
+  opacity: 1;
+} */
+
+.checkbox:checked ~ .mega-menu{
+  visibility: visible;
+  opacity: 1;
+}
+
+.checkbox {
+  display: none;
 }
 
 .div-3-buttons {
@@ -334,23 +383,7 @@ p {
   align-items: center;
 }
 
-.velma {
-  width: 250px;
-  height: auto;
-  border-radius: 4px;
-}
-
-.lewis {
-  width: 250px;
-  height: 281px;
-  border-radius: 4px;
-}
-.arturo {
-  width: 250px;
-  height: auto;
-  border-radius: 4px;
-}
-.marc {
+.velma, .lewis, .arturo, .marc {
   width: 250px;
   height: auto;
   border-radius: 4px;
@@ -361,14 +394,22 @@ p {
     height: 281px;
     margin-top: -291px;
     border-radius: 4px;
-    background-color: var(--bluebuttonhover);
-    filter: opacity(70%);
+    /* background-color: var(--bluebuttonhover); */
+    background-color: rgba(46, 84, 180,0);
+    /* filter: opacity(70%) */;
     visibility: hidden;
     display: flex;
     flex-direction: row;
     justify-content:center;
     align-items: center;
     position: absolute;
+    transition: all 0.3s linear;
+}
+
+.lewis:hover + .hover-expert, .arturo:hover + .hover-expert, .velma:hover+.hover-expert, .marc:hover+.hover-expert {
+ visibility: visible; 
+background-color: rgba(46, 84, 180, 0.7);
+/*  filter: opacity(70%) */;
 }
 
 .hover-expert button{
@@ -399,23 +440,7 @@ p {
   background-repeat: no-repeat;
   margin-right: 10px;
 }
-
-.lewis:hover .hover-expert {
-  visibility: visible;
-  transition: 0,3s;
-} 
-
-.arturo:hover + .hover-expert {
-  visibility: visible;
-}
-
-.velma:hover+.hover-expert {
-  visibility: visible;
-}
-
-.marc:hover+.hover-expert {
-  visibility: visible;
-}
+ 
 
 .div-8 {
   background-color: var(--backgroundgray2);
@@ -741,6 +766,10 @@ margin: 0px;
 padding: 0px 20px;
 border-bottom-left-radius: 5px;
 border-top-left-radius: 5px;
+}
+
+.form-subs input:focus{
+  outline: none;
 }
 
 .form-subs button {

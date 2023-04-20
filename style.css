@@ -390,27 +390,33 @@ p {
 }
 
 .hover-expert {
-    width: 250px;
-    height: 281px;
-    margin-top: -291px;
-    border-radius: 4px;
-    /* background-color: var(--bluebuttonhover); */
-    background-color: rgba(46, 84, 180,0);
-    /* filter: opacity(70%) */;
-    visibility: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    position: absolute;
-    transition: all 0.3s linear;
+  width: 250px;
+  height: 281px;
+  margin-top: -291px;
+  border-radius: 4px;
+  /* background-color: var(--bluebuttonhover); */
+  /* background-color: rgba(46, 84, 180,0); */
+  /* visibility: hidden; */
+  background-color: rgba(46, 84, 180, 0.7);
+  filter: opacity(0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: filter 0.2s linear;
 }
 
-.lewis:hover + .hover-expert, .arturo:hover + .hover-expert, .velma:hover+.hover-expert, .marc:hover+.hover-expert {
+.hover-expert:hover {
+  filter: opacity(100%);
+}
+
+/* .lewis:hover + .hover-expert, .arturo:hover + .hover-expert, .velma:hover+.hover-expert, .marc:hover+.hover-expert {
  visibility: visible; 
 background-color: rgba(46, 84, 180, 0.7);
-/*  filter: opacity(70%) */;
-}
+filter: opacity(70%) ;
+}  */
+
 
 .hover-expert button{
   width: 25px;
@@ -807,4 +813,4 @@ border-top-left-radius: 5px;
  display: flex;
 justify-content: space-around;
 flex-direction: row;
-}
+                    }
